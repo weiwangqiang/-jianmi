@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="全镇江"
+            android:id="@+id/zhaojianzhi_dialog_item_text"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/zhaojianzhi_dialog_item_checkBox"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/zhaojianzhi_dialog_item_Image"
+            android:background="@drawable/yes"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

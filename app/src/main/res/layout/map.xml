@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:background="#FFFFFF">
+        <RelativeLayout
+            android:layout_width="45.0dp"
+            android:layout_height="45.0dp"
+            android:id="@+id/mapView_back"
+            android:background="@drawable/relative_back">
+            <Button
+                android:layout_width="16.5dp"
+                android:layout_height="29dp"
+                android:paddingRight="5.0dp"
+                android:clickable="false"
+                android:layout_centerInParent="true"
+                android:background="@drawable/location_back"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兼职路线"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

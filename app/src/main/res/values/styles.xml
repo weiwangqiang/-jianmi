@@ -1,0 +1,196 @@
+<resources>
+
+    <!-- Base application theme. 去掉自带 的头标题-->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowBackground"> @drawable/welcome</item>-->
+    </style>
+    <style name="StartAppTheme" parent="@style/BaseAppTheme">
+             <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--分享界面的弹出动画-->
+    <style name="popWindow_animation">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_slide_in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_slide_out_to_top</item>
+    </style>
+    <!--popwindow 的弹出动画-->
+    <style name="jianpopWindow_animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/out_to_top</item>
+    </style>
+    <!-- 全屏的对话框 -->
+    <style name="myFullDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+<!--  主界面的导航button 的style-->
+    <style name="main_radiobutton">
+        <item name="android:textColor">@drawable/main_rbtext_bg</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:drawablePadding">-5dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="main_redCircle">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginLeft">-25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/red_circle</item>
+        <item name="android:alpha">5</item>
+    </style>
+    <!--  主调text 的style-->
+    <style name="main_text">
+        <item name="android:textColor">@color/base_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="myShowButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:minWidth">10.0dp</item>
+        <item name="android:maxWidth">10.0dp</item>
+        <item name="android:minHeight">10.0dp</item>
+        <item name="android:maxHeight">10.0dp</item>
+    </style>
+    <!--my 的左边text style -->
+    <style name="main_my_textlist">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/my_text_blackbg</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="main_my_EditText_Left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="main_my_editList_Right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/my_text_blackbg</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <!--my 的右边image style -->
+    <style name="main_my_imageList">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@mipmap/more</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--上拉footerView的style-->
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Small">
+    <item name="android:minWidth">20.0dp</item>
+    <item name="android:maxWidth">20.0dp</item>
+    <item name="android:minHeight">20.0dp</item>
+    <item name="android:maxHeight">20.0dp</item>
+    <item name="android:indeterminateDrawable">@drawable/main_progress_drawback</item>
+    </style>
+    <style name="BigProgressStyle" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:minWidth">40.0dp</item>
+        <item name="android:maxWidth">40.0dp</item>
+        <item name="android:minHeight">40.0dp</item>
+        <item name="android:maxHeight">40.0dp</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:indeterminateDrawable">@drawable/main_progress_drawback</item>
+    </style>
+    <!--我的申请列表的radiobutton -->
+    <style name="my_apply_radiobutotn">
+        <item name="android:background">@drawable/my_apply_topbg</item>
+        <item name="android:textColor">@drawable/main_rbtext_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+      <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="menu_list_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:drawableRight">@mipmap/more</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:background">@drawable/relative_back</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+        <!--环信的style-->
+
+    <style name="MLTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--状态栏颜色 -->
+    <item name="colorPrimaryDark">@color/ml_primary_dark</item>
+    <!--Toolbar 颜色-->
+    <item name="colorPrimary">@color/ml_primary</item>
+    <!--表示CheckBox、EditText、Switch、Spinner、RadioButton等控件激活时候的色调-->
+    <item name="colorAccent">@color/ml_accent</item>
+    <!--同上-->
+    <item name="colorControlActivated">@color/ml_accent</item>
+
+
+    <!--设置不显示ActionBar-->
+    <item name="windowActionBar">false</item>
+    <!--设置不显示Title-->
+    <item name="windowNoTitle">true</item>
+    <!--<item name="android:textColor">@color/ml_text_black</item>-->
+</style>
+
+    <!--自定义主题-->
+<style name="MLTheme.Red">
+
+</style>
+
+
+    <!-- Toolbar弹出菜单样式 -->
+<style name="MLTheme.PupopMenu" parent="@style/ThemeOverlay.AppCompat">
+<item name="android:colorBackground">#ffffff</item>
+<item name="android:textColor">#232323</item>
+</style>
+
+<style name="MLTheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+<!--Toolbar字体颜色-->
+<item name="colorControlNormal">@color/ml_text_primary</item>
+<item name="android:textColor">@color/ml_text_primary</item>
+</style>
+
+<style name="MLTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+<style name="MLTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--环信的style-->
+    </resources>

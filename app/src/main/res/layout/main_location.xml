@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45.0dp"
+    android:background="@color/base_color">
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingRight="5.0dp"
+        android:id="@+id/location_back"
+        android:background="@drawable/back"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择城市"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <com.example.mytools.my_Edit
+            android:lines="1"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="38.0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/location_editText"
+            android:drawableLeft="@drawable/search_bar"
+            android:drawableRight="@drawable/delete"
+            android:layout_centerVertical="true"
+            android:hint="@string/Changelocation"
+            android:background="@drawable/searchbg"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="1.0dp"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ListView
+            android:id="@+id/country_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+        <TextView
+            android:id="@+id/country_dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible"
+            />
+
+        <com.example.mytools.SideBar
+            android:id="@+id/list_sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+
+
+    </FrameLayout>
+</LinearLayout>

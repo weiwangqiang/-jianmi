@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:id="@+id/evaluate_image"
+        android:src="@drawable/load_waiting"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/evaluate_companyName"
+        android:layout_toRightOf="@+id/evaluate_image"
+        android:layout_margin="10dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="adada"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/evaluate_myEvaluate"
+        android:layout_toRightOf="@+id/evaluate_image"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/evaluate_companyName"
+        android:text="收到的评价" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/evaluate_kind"
+        android:text="兼职类型"
+        android:layout_toRightOf="@id/evaluate_image"
+        android:layout_toLeftOf="@+id/evaluate_time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/evaluate_myEvaluate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/evaluate_time"
+        android:text="2015-04-15"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/evaluate_kind"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+
+</LinearLayout>

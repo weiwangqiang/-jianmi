@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/jianzhi_bg"
+    >
+        <com.example.mytools.myScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/jianzhi_scrollView"
+            android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <include
+                            layout="@layout/jianzhi_content1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"/>
+                        <include
+                            layout="@layout/jianzhi_content2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"/>
+                        <include
+                            layout="@layout/jianzhi_content3"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"/>
+                        <include
+                            layout="@layout/jianzhi_content4"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"/>
+                </LinearLayout>
+        </com.example.mytools.myScrollView>
+
+        <include
+            layout="@layout/jianzhi_mes_header"
+            android:id="@+id/jianzhi_headerView"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@color/jianzhiHeaderBG"
+            android:layout_below="@+id/jianzhi_headerView"
+            android:id="@+id/jianzhi_titleView">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="你Y的肯我"
+                    android:lines="1"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/jianzhi_TopTitle"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="5元一次"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_toLeftOf="@+id/jianzhi_TopTitle"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/jianzhi_TopSalary"/>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/jianzhi_mes_bottom"
+            android:id="@+id/jianzhi_BottomView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true" />
+</RelativeLayout>

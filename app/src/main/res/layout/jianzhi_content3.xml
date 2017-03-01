@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/jianzhi_content"
+        android:text="工作内容"
+        android:textColor="@color/base_color"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jianzhi_mes_workContent"
+        android:text="string/message"
+        android:layout_below="@+id/jianzhi_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jianzhi_mes_workWarn"
+        android:text="【温馨提示】\n\n  本兼职经过兼米认证，保证信息的可靠性"
+        android:layout_below="@+id/jianzhi_mes_workContent"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:paddingBottom="20dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

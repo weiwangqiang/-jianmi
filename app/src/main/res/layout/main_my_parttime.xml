@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:background="@color/base_color">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:paddingRight="5.0dp"
+            android:id="@+id/partTime_back"
+            android:background="@drawable/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的求职意向"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置求职意，即可在首页获取自己感兴趣的兼职"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@color/view_background"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="兼职类型(可以多选)"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/partTime_recyclerView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:divider="#ffff0000"
+                android:dividerHeight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="空闲时间（可多选）"
+                android:padding="10dp"
+                android:id="@+id/textView3" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/partTime_recyclerView2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:divider="#ffff0000"
+                android:dividerHeight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="其他"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/partTime_other"
+                android:background="@color/view_background"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_background"
+                android:text="@string/canInput_textNumber"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/partTime_post"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_list_text"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

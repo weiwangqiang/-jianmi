@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:background="@color/base_color">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:paddingRight="5.0dp"
+            android:id="@+id/set_tui_back"
+            android:background="@drawable/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兼职推送"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginTop="10dp"
+
+    android:textSize="15sp"
+    android:paddingLeft="30dp"
+    android:text="新消息提示"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="2dp"
+        android:background="@color/view_background"/>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="15sp"
+        android:text="接收新消息通知"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/myset_switch_bg"
+        android:button="@null"
+        android:id="@+id/switch_receive" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="2dp"
+        android:background="@color/view_background"/>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:button="@null"
+        android:drawableRight="@drawable/myset_switch_bg"
+        android:textSize="15sp"
+        android:text="声音"
+        android:id="@+id/switch_voice" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="2dp"
+        android:background="@color/view_background"/>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="15sp"
+        android:text="震动"
+        android:button="@null"
+        android:drawableRight="@drawable/myset_switch_bg"
+        android:id="@+id/switch_shock" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="2dp"
+        android:background="@color/view_background"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jianzhi_bottom_collect"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:button="@null"
+        android:text="收藏"
+        android:textSize="15sp"
+        android:textColor="@color/gray"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:drawableTop="@drawable/jianzhi_mess_collect"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/jianzhi_bottom_collect"
+        android:background="@color/base_color"
+        android:text="立即报名"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/jianzhi_mes_apply" />
+</LinearLayout>

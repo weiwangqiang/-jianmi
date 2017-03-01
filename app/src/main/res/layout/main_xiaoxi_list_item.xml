@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/xiaoxi_list_image"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/load_waiting"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xiaoxi_list_TextTitle"
+        android:text="百度糯米APP推广"
+        android:lines="1"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/xiaoxi_list_image"
+        android:layout_toLeftOf="@+id/main_list_TextMoney"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xiaoxi_list_text"
+        android:layout_toRightOf="@id/xiaoxi_list_image"
+        android:layout_alignBottom="@+id/main_list_TextOver"
+        android:layout_below="@+id/xiaoxi_list_TextTitle"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:lines="1"
+        android:text="发布内容"/>
+
+</RelativeLayout>

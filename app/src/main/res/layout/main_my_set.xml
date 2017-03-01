@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:background="@color/base_color">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:paddingRight="5.0dp"
+            android:id="@+id/set_back"
+            android:background="@drawable/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            style="@style/menu_list_text"
+            android:text="兼职推送"
+            android:id="@+id/main_my_SetPullMes"
+
+            android:drawableLeft="@mipmap/my_work_express"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_background" />
+        <Button
+            style="@style/menu_list_text"
+            android:text="设置密码"
+            android:id="@+id/main_my_SetPassWord"
+
+            android:drawableLeft="@mipmap/my_work_express"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_background"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+                style="@style/menu_list_text"
+            android:text="版本更新"
+            android:id="@+id/main_my_SetGetNew"
+            android:drawableLeft="@mipmap/my_work_express"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_background"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            style="@style/menu_list_text"
+            android:text="关于兼米"
+            android:id="@+id/main_my_SetAbout"
+
+            android:drawableLeft="@mipmap/my_work_express"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_background"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            style="@style/menu_list_text"
+            android:text="清理缓存"
+            android:id="@+id/main_my_SetSClear"
+
+            android:drawableLeft="@mipmap/my_work_express"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_background"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            style="@style/menu_list_text"
+            android:text="系统设置"
+            android:id="@+id/main_my_SetSystem"
+            android:drawableLeft="@mipmap/my_work_express"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_background"
+            android:layout_alignParentBottom="true"/>
+         <Button
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginTop="20dp"
+              android:id="@+id/main_my_setOutLogin"
+              android:background="@drawable/relative_back"
+              android:text="退出当前账号"
+              android:gravity="center"/>
+</LinearLayout>

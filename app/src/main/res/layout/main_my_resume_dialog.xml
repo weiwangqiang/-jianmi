@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:id="@+id/share_pop_buttonTop">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/jianzhi_share_Linear"
+        android:orientation="vertical"
+        android:background="#00000000"
+        android:paddingBottom="20dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/ResumeDialog_item1"
+            android:text="取消"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_share_cancel"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/ResumeDialog_item2"
+            android:text="取消"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_share_cancel"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/ResumeDialog_cancel"
+                android:text="取消"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_share_cancel"/>
+    </LinearLayout>
+
+</LinearLayout>

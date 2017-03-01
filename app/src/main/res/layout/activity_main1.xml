@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wangqiang.jianmi1.MainActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_linearBottom"
+        >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/main_framelayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/main_notInternet_text"
+        android:text="@string/notInternet"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:layout_above="@id/main_linearBottom"
+        android:background="@color/gray"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_linearBottom"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_background"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                style="@style/main_radiobutton"
+                android:id="@+id/main_home"
+                android:drawableTop="@drawable/main_home"
+                android:text="首页"
+                android:checked="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/main_zhaojianzi"
+                style="@style/main_radiobutton"
+                android:drawableTop="@drawable/main_jianzi"
+                android:textColor="@drawable/main_rbtext_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1.0"
+                android:text="兼职"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/main_xiaoxi"
+                style="@style/main_radiobutton"
+                android:drawableTop="@drawable/main_xiaoxi"
+                android:text="消息"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:text="12"
+                android:visibility="gone"
+                style="@style/main_redCircle"
+                android:id="@+id/main_redCircleXX"
+                android:layout_toRightOf="@+id/main_xiaoxi"
+                android:layout_alignTop="@+id/main_xiaoxi"
+/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/main_my"
+                style="@style/main_radiobutton"
+                android:layout_weight="1.0"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/main_my"
+                android:text="我的"
+                />
+            <Button
+                android:text="12"
+                android:id="@+id/main_redCircleMY"
+                style="@style/main_redCircle"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/main_my"
+                android:layout_alignTop="@+id/main_my" />
+        </RelativeLayout>
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

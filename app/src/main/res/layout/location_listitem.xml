@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/location_listItem_text1"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:text="字母"
+    android:gravity="center_vertical"
+    android:textSize="14sp"
+    android:paddingLeft="20dp"
+    android:background="#CFCFCF"/>
+    <TextView
+        android:id="@+id/location_listItem_text2"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:text="城市名"
+        android:paddingLeft="20.0dp"
+        android:textSize="17dp"
+        android:gravity="center_vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_background"/>
+</LinearLayout>

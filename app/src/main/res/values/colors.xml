@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+  <!-- 主色调   -->
+    <color name="base_color">#00B38A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_back">#EBEBEB</color>
+    <color name="gray">#40000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="zhaojianzi_text_off">#AAAAAA</color>
+    <color name="zhaojianzi_text_on">#00B38A</color>
+    <color name="relative_back_off">#FFFFFF</color>
+    <color name="relative_back_on">#CFCFCF</color>
+    <color name="search_graybg">#66CCCCCC</color>
+    <color name="jianzhiHeaderBG">#292929</color>
+    <color name="view_background">#DEDEDE</color>
+    <color name="my_text_blackbg">#242424</color>
+    <color name="searchEditeTextbg">#E5E5E5</color>
+
+<!--环信的颜色-->
+    <color name="ml_primary">#f63a21</color>
+    <color name="ml_primary_dark">#c82712</color>
+    <color name="ml_text_primary">#ffffff</color>
+    <color name="ml_accent">#defa5053</color>
+
+    <color name="ml_text_red">#ff3f43</color>
+    <color name="ml_text_white">#ffffff</color>
+    <color name="ml_text_black">#232323</color>
+    <color name="ml_white">#ffffff</color>
+    <color name="ml_gray">#9c9c9c</color>
+    <color name="ml_yellow">#ff842d</color>
+    <color name="ml_blue">#0a95ff</color>
+
+    <color name="ml_bg_white">#e8e8e8</color>
+    <color name="ml_text_bg_black">#9c232323</color>
+
+    <color name="ml_btn_normal">#e8e8e8</color>
+    <color name="ml_btn_pressed">#d8d8d8</color>
+    <color name="ml_btn_red_normal">#ff1e1e</color>
+    <color name="ml_btn_red_pressed">#d71a1a</color>
+    <color name="ml_btn_green_normal">#43af00</color>
+    <color name="ml_btn_green_pressed">#348303</color>
+
+    <!-- leave -->
+
+    <!--========================-->
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+
+    <color name="default_clickable_color">#cccccc</color>
+
+</resources>
